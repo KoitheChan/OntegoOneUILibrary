@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AddingOrder extends StatelessWidget {
-  const AddingOrder({super.key});
+class BarcodeScanner extends StatelessWidget {
+  const BarcodeScanner({super.key});
 
   @override
   Widget build(BuildContext context) {

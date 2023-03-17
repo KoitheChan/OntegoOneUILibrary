@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class RowViewItems extends StatelessWidget {
-  const RowViewItems({super.key});
+class Positions extends StatelessWidget {
+  const Positions({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,9 +9,9 @@ class RowViewItems extends StatelessWidget {
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Padding(
-          padding: const EdgeInsets.only(top:100,left: 100),
+          padding: const EdgeInsets.only(top: 100, left: 100),
           child: Container(
-            height: 200,
+            height: 130,
             width: 550,
             color: Color.fromARGB(255, 253, 253, 253),
             child: Column(
@@ -36,25 +36,20 @@ class RowViewItems extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          Container(
-                            height: 25,
-                            width: 25,
-                            child: Image(
-                              image: AssetImage("lib/assets/imgs/arrows.png"),
-                              color: Color.fromARGB(255, 222, 222, 222),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 20,
+                          Image(
+                            image: AssetImage("lib/assets/imgs/refresh.png"),
+                            height: 30,
+                            width: 30,
                           ),
                           Text(
                             "Positions",
                             style: TextStyle(
-                              color: Color.fromARGB(255, 142, 142, 142),
+                              color: Color.fromARGB(255, 121, 121, 121),
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                           SizedBox(
-                            width: 400,
+                            width: 440,
                           ),
                           Text("1"),
                         ],
@@ -63,9 +58,11 @@ class RowViewItems extends StatelessWidget {
                   ),
                 ),
                 Container(
+                  color: Color.fromARGB(255, 228, 228, 228),
                   child: Padding(
                     padding: const EdgeInsets.only(
-                      top: 20,
+                      top: 5,
+                      bottom: 5,
                       left: 10,
                     ),
                     child: Row(
@@ -74,66 +71,39 @@ class RowViewItems extends StatelessWidget {
                           children: [
                             Container(
                               child: Text(
-                                "Pick-Up Number",
+                                "Number",
                                 style: TextStyle(
                                   color: Color.fromARGB(255, 142, 142, 142),
                                 ),
                               ),
                             ),
-                            Container(
-                              padding: EdgeInsets.only(
-                                right: 90,
-                              ),
-                              child: Text(
-                                "5",
-                                textAlign: TextAlign.start,
-                              ),
-                            ),
                           ],
                         ),
                         SizedBox(
-                          width: 150,
+                          width: 200,
                         ),
                         Column(
                           children: [
                             Container(
                               child: Text(
-                                "Pick-Date",
+                                "Date",
                                 style: TextStyle(
                                   color: Color.fromARGB(255, 142, 142, 142),
                                 ),
                               ),
                             ),
-                            Container(
-                              padding: EdgeInsets.only(
-                                right: 0,
-                              ),
-                              child: Text(
-                                "2022-05-30",
-                                textAlign: TextAlign.start,
-                              ),
-                            ),
                           ],
                         ),
                         SizedBox(
-                          width: 180,
+                          width: 200,
                         ),
-                        Stack(
+                        Column(
                           children: [
                             Container(
-                              height: 30,
-                              width: 30,
-                              child: Image(
-                                image:
-                                    AssetImage("lib/assets/imgs/green_single.png"),
-                              ),
-                            ),
-                            Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Text(
-                                  "1",
-                                  style: TextStyle(color: Colors.white),
+                              child: Text(
+                                "Type",
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 142, 142, 142),
                                 ),
                               ),
                             ),
@@ -158,69 +128,38 @@ class RowViewItems extends StatelessWidget {
                                 right: 90,
                               ),
                               child: Text(
-                                "Positions",
+                                "1",
                                 style: TextStyle(
-                                  color: Color.fromARGB(255, 142, 142, 142),
+                                  color: Color.fromARGB(255, 0, 0, 0),
                                 ),
-                              ),
-                            ),
-                            Container(
-                              padding: EdgeInsets.only(
-                                right: 140,
-                              ),
-                              child: Text(
-                                "5",
-                                textAlign: TextAlign.start,
                               ),
                             ),
                           ],
                         ),
                         SizedBox(
-                          width: 108,
+                          width: 130,
                         ),
                         Column(
                           children: [
                             Container(
                               child: Text(
-                                "Remarks",
+                                "2016-09-08",
                                 style: TextStyle(
-                                  color: Color.fromARGB(255, 142, 142, 142),
+                                  color: Color.fromARGB(255, 0, 0, 0),
                                 ),
-                              ),
-                            ),
-                            Container(
-                              padding: EdgeInsets.only(
-                                right: 0,
-                              ),
-                              child: Text(
-                                "",
-                                textAlign: TextAlign.start,
                               ),
                             ),
                           ],
                         ),
                         SizedBox(
-                          width: 189,
+                          width: 185,
                         ),
-                        Stack(
-                          children: [
-                            Container(
-                              height: 30,
-                              width: 30,
-                              child: Image(
-                                image: AssetImage("lib/assets/imgs/red_single.png"),
-                              ),
-                            ),
-                            Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Text(
-                                  "0",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ),
-                            ),
-                          ],
+                        Container(
+                          height: 30,
+                          width: 30,
+                          child: Image(
+                            image: AssetImage("lib/assets/imgs/people.png"),
+                          ),
                         ),
                       ],
                     ),
